@@ -1,23 +1,16 @@
-# simple-webapp-IoC-basics
+# confident-spring-02-IoC-basics
+This repository is related to module 2 in Marco Behler's course "The confident Spring professional" https://www.marcobehler.com/ which I purchased in order to understand the fundamentals of Spring. The course starts with plain Java backend and introduces plain Spring features little by little, showcasing what Spring Boot hides under the hood. At the end of the course Spring Boot features are implemented.
+
 Introducing Spring Core features, building on top of simple-webapp repository
 
 ## Learning goals
-Maven dependencies  
-Basics of Spring Core features:  
+Adding plain Spring (not Boot) features to project.  
+- How to configure and start Spring framework.
+- Replacing "Poor man's dependency injection" with Spring's dpependency injection framework.
+- Basics of Spring Core features:    
 @Configuration, @Beans, @Scopes, @Component, @ComponentScan  
 @Autowired(constructor&field&setter injections), @Bean lifecycles  
 Resources, Properties and Profiles.  
-
-## Sources
-Based largely on learnings from Marco Behler's course "The confident Spring professional" https://www.marcobehler.com/ which I bought for myself in order to understand the fundamentals of Spring. 
-After going through the course twice, going at it for the third time. Minimal comments for clarity, checking source code only when necessary.
-
-## Use
-Endpoints for local use:
-- GET "/" returns html greeting
-- GET "/invoices" returns all posted invoices as JSON
-- POST "/invoices?user_id=jeff&amount=40" creates an invoice and returns it as JSON
-- POST "/*" returns 404
 
 ## Key takeaways
 - ApplicationContext is central interface for Spring IoC
@@ -32,3 +25,11 @@ Endpoints for local use:
 - @PropertySource needs to be set in config file (remember, order matters if several), properties accessed through @Value
 - @Profile("env"): Class will run only in specified profile (remember to set VM options)
 - @PropertySource can be choosen to be used only when run in certain profile
+
+
+## Use
+Endpoints for local use:
+- GET "/" returns html greeting
+- GET "/invoices" returns all posted invoices as JSON
+- POST "/invoices?user_id=jeff&amount=40" creates an invoice and returns it as JSON
+- POST "/*" returns 404
