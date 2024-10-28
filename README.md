@@ -40,17 +40,17 @@ To run the application, you have two choices:
     ```
 4. Run the application with: 
     ```sh
-    java -jar target/songsapi-1.0-SNAPSHOT.jar
+    java -jar target/pdfinvoices-1.0-SNAPSHOT.jar
     ```
 
 ### Run in Docker
 1. Build the image:
     ```shell
-    docker build . -t songs-api:latest     
+    docker build . -t confident-02:latest     
     ```
 2. Run the image:
     ```shell
-    docker run -it -p 8080:8080 songs-api:latest 
+    docker run -it -p 8080:8080 confident-02:latest 
     ```
 3. Open the api in http://localhost:8080
 
