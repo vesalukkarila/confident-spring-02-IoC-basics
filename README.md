@@ -1,10 +1,8 @@
 # confident-spring-02-IoC-basics
 This repository is related to module 2 in Marco Behler's course "The confident Spring professional" https://www.marcobehler.com/ which I purchased in order to understand the fundamentals of Spring. The course starts with plain Java backend and introduces plain Spring features little by little, showcasing what Spring Boot hides under the hood. At the end of the course Spring Boot features are implemented.
 
-Introducing Spring Core features, building on top of simple-webapp repository
-
 ## Learning goals
-Adding plain Spring (not Boot) features to project.  
+Introducing Spring Core features.    
 - How to configure and start Spring framework.
 - Replacing "Poor man's dependency injection" with Spring's dpependency injection framework.
 - Basics of Spring Core features:    
